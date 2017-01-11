@@ -4,7 +4,7 @@
    Author's custom styles
    ========================================================================== */
 
-@font-face { font-family: "Bodoni MT"; src: url('fonts/BOD_R.ttf'); }
+@font-face { font-family: "Bodoni MT"; src: url('../fonts/BOD_R.TTF'); }
 
 body {
     font-family: "Bodoni MT";
@@ -29,6 +29,86 @@ body {
     line-height: 180%;
 }
 
+.footer-copys{
+    float: left;
+}
+.footer-social-icons{
+    float: right;
+    margin-top: -15px;
+
+}
+
+/* ==========================================================================
+   Lesson Stuff
+   ========================================================================== */
+.lesson-conv-list{
+    line-height: 2;
+}
+.lesson-conv-list li{
+    margin-top: 10px;
+}
+.footer-separator{
+    min-height: 30px;
+}
+
+.lesson-conv-list li{
+    margin-top: 10px;
+}
+.lesson-body p{
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+/* ==========================================================================
+   Page 404
+   ========================================================================== */
+
+.pg404 * {
+    line-height: 1.2;
+    margin: 0;
+}
+
+.pg404 html {
+    color: #888;
+    display: table;
+    font-family: sans-serif;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.pg404 body {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 2em auto;
+}
+
+.pg404 h1 {
+    color: #555;
+    font-size: 3em;
+    font-weight: 400;
+    margin-left:5vw;
+    margin-right:5vw;
+}
+
+.pg404 p {
+    margin: 0 auto;
+    font-size: 1.5em;
+    width: 500px;
+    margin-top: 20vh;
+}
+
+@media only screen and (max-width: 280px) {
+
+    .pg404 body, p {
+        width: 95%;
+    }
+
+    .pg404 h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+    }
+
+}
 
 
 

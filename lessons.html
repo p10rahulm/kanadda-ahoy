@@ -1,0 +1,784 @@
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Lets create a title-->
+    <title>Simplifying Kannada Learning | Madhav</title>
+    <meta name="keyword" content="Kannada, Kanadda, Kanada, Kannada Learning, Kanadda learning, Kanada Learning, Learn Kannada in 60 days, learn kannada quickly, speaking kannada,Talk Kannada, Talk Kannada Fast, Kannada in 30 days, language Kannada, Quick Kannada Learning, Bangalore Kannada Learn, Teach me Kannada, Kannada is difficult,Talk in Bengaluru, learn Kannada Language, Kannada Language, Madhav Ajjampur, Madhav, Cuemath, Pickup Kannada, Kannadify, Understand Kannada, Translate Kannada,Kannada is Difficult, How to speak Kannada,speaking Kannada, speak to auto in kannada, kannada audio learning, kannada through audio, hearing kannada to learn" >
+    <meta name="description" content="Kannadify teaches kannada in the most immersive learning manner possible to enable learners to pick up Kannada language quickly. It's a method called learning through doing. Not only will they understand within less time, but be able to start speaking as well. Best of luck in your kannada journey!">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Lets load the base CSS (The styling of the website) needed for creating a webpage-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Lets load our custom CSS file that will be used for the webpage-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Loading the theme style sheet -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!--OK the modernizr JS -->
+
+    <!--Make the angular app work-->
+    <script type="text/javascript">
+
+        angular.module('tabApp', [])
+            .controller('TabController', ['$scope', function($scope) {
+                $scope.tab = 1;
+
+                $scope.setTab = function(newTab){
+                    $scope.tab = newTab;
+                };
+
+                $scope.isSet = function(tabNum){
+                    return $scope.tab === tabNum;
+                };
+            }]);
+
+
+    </script>
+</head>
+
+<body>
+
+
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://www.google.com/chrome/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.kannadify.me">Kannadify Me!</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" role="form"
+                  action="https://formspree.io/rahul.maddy@gmail.com"
+                  method="POST">
+                <input type="email" placeholder="Email" class="form-control" name = "email">
+                <!--
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                </div> -->
+
+                <!--Honeypot! If some scraper gets to this and fills anything here, it is ignored-->
+                <input type="text" name="_gotcha" style="display:none" />
+                <!--Here are the cc ids-->
+                <input type="hidden" name="_cc" value="rahul.madhavan@atidiv.com,psypriya.d@gmail.com" />
+                <input type="hidden" name="_subject" value="New submission on Kannadify!" />
+                <button type="submit" class="btn btn-success" value="Send">Sign up for newsletter</button>
+            </form>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="navbar" id="lesson-header-container">
+    <div class="container">
+
+        <div class="row">
+            <p class="col-md-12">
+                <div class = "lesson-header">
+
+                    <H2><i>
+                        Speaking is Learning, Talk along!
+                    </i></H2>
+
+                </div>
+            </p>
+        </div>
+    </div>
+</div>
+<div  class="separator">
+</div>
+
+
+<div class="container">
+    <!-- tab controller -->
+    <div ng-app="tabApp">
+        <div ng-controller="TabController">
+
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="left-menubar col-md-3">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li ng-class="{ active: isSet(1) }">
+                            <a href ng-click="setTab(1)">Introducting the lessons</a>
+                        </li>
+                        <li ng-class="{ active: isSet(2) }">
+                            <a href ng-click="setTab(2)">Munna and Honna</a>
+                        </li>
+                        <li ng-class="{ active: isSet(3) }">
+                            <a href ng-click="setTab(3)">Autos in Bangalore</a>
+                        </li>
+                        <li ng-class="{ active: isSet(4) }">
+                            <a href ng-click="setTab(4)">Respectin'</a>
+                        </li>
+                        <li ng-class="{ active: isSet(5) }">
+                            <a href ng-click="setTab(5)">Friendly banter</a>
+                        </li>
+                        <li ng-class="{ active: isSet(6) }">
+                            <a href ng-click="setTab(6)">Back to Basics</a>
+                        </li>
+                        <li ng-class="{ active: isSet(7) }">
+                            <a href ng-click="setTab(7)">Hunger Games</a>
+                        </li>
+                        <li ng-class="{ active: isSet(8) }">
+                            <a href ng-click="setTab(8)">Origins of Bangalore</a>
+                        </li>
+                        <li ng-class="{ active: isSet(9) }">
+                            <a href ng-click="setTab(9)">Raja and Ajji</a>
+                        </li>
+                        <li ng-class="{ active: isSet(10) }">
+                            <a href ng-click="setTab(10)">Bendha kaaLu</a>
+                        </li>
+                        <li ng-class="{ active: isSet(11) }">
+                            <a href ng-click="setTab(11)">Verbs</a>
+                        </li>
+                        <li ng-class="{ active: isSet(12) }">
+                            <a href ng-click="setTab(12)">Hey:Lu</a>
+                        </li>
+                        <li ng-class="{ active: isSet(13) }">
+                            <a href ng-click="setTab(13)">IISc</a>
+                        </li>
+                        <li ng-class="{ active: isSet(14) }">
+                            <a href ng-click="setTab(14)">Origins</a>
+                        </li>
+                        <li ng-class="{ active: isSet(15) }">
+                            <a href ng-click="setTab(15)">My beloved Company</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Here come the lesson transcripts-->
+                    <!--First Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(1)">
+
+                        <h2>Namaskaara to everybody</h2><hr><br>
+
+                        <ul class = "lesson-conv-list">
+                            <li>
+                                Ellorigu namaskaara → Namaskaara to everybody.
+                            </li>
+                            <li>
+                                Ee gumpige swaagatha → Welcome to this group.
+                            </li>
+                            <li>
+                                Iwattininda naanu nimage aadashTu sulabhada reetiyalli kannada hayLkoDlikke prayatna maadtini →
+                                From today, I will try to teach all of you Kannada in the easiest way possible.
+                            </li>
+                            <li>
+                                Nijaa hayLbeku andhray kannada nudi kashta yenu alla → To tell the truth, the Kannada language is not at all difficult.
+                            </li>
+                            <li>
+                                Neevu prati diwasa eradu vaakya kannadadalli maataadidaray saaku, neevu
+                                begane bhaashay kalitu biduttiri  → It is enough if you speak two Kannada sentences
+                                every day, you will learn the language quite quickly.
+                            </li>
+                            <li>
+                                Mattomme nimellorigu swaagatha → Once again, welcome to all of you.
+                            </li>
+                            <li>
+                                Nimma kalike sugaamawaagirali → I hope your learning is smooth.
+                            </li>
+                            <li>
+                                Yenaadru prashne idre, dayawiTTu nanannu keLi → If you have any questions, please ask me.
+                            </li>
+
+
+                        </ul>
+                        <h3>Today’s teaching:</h3>
+                        <ul>
+                            <li>
+                                <p>Eega iwattina paaTakke naanu eraDu thumbaa baLasuva sentences-annu maataadi toristhini</p>
+                                <p>Now, for today’s lesson, I will speak and present two very common sentences.</p>
+                            </li>
+                            <li>
+                                <p>Namskaara, hégidira? → Hello, how are you?</p>
+                                <p>Naanu chennagidini. neevu? → I am fine. And you?</p>
+                            </li>
+                        </ul>
+
+
+
+
+                    </div>
+                    <!--Second Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(2)">
+
+                        <h2>Introducing Munna and Honna</h2><hr><br>
+
+                        <p>ellorigu namaskaara. iwatthu naanu ondhu puTTa maatukathe nimage kElisthini →</p>
+                        <p> today, i will get you to listen to a small conversation.</p><hr><br>
+
+                        <p>Munna: hey, is it difficult to learn kannada?</p>
+                        <p>Honna: illa, kannada kaliyodu yenu kashTa alla → no, learning kannada is not at all hard.</p>
+                        <p>bekaadaray naanay ninagay hayLkoTtini → if you want, I myself will teach you.</p>
+                        <p>M: really? that sounds great! when shall we start?</p>
+                        <p>H: aagale shuru maaDidivi! → we have already started!</p>
+                        <p>M: how? where?</p>
+                        <p>H: illay! iwaagle! → right here! right now!</p>
+                        <p>naanu kannada maataaDtilwaa? → am i not speaking kannada?</p>
+                        <p>M: haha! you’re right, you are! I hadn’t even noticed...</p>
+                        <p>H: yén parvaagilla → that’s all right.</p>
+                        <p>aadru nijawaaglu bhashe kaliyodu heege → but really, this is the way to learn a language.</p>
+                        <p>matte matte kayLi → by listening to it again and again.</p>
+                        <p>M: you know what? i think i agree with you -- reading isn’t quite the same...</p>
+                        <p>H: yaykandhray, kayLi kayLi kramayNa ninagay maataDakke dhairya baratte →</p>
+                        <p>by listening to it constantly, you will eventually become confident enough to speak it yourself.</p>
+                        <p>idakkay immersive learning anthaa kariyodu → this is what they call immersive learning</p>
+                        <p>usually, hosa deshakk hodare, alliya bhashe kali bayk aagtaday → usually when you go to a new place, you have to learn to learn its language.</p>
+                        <p>aadaru bengaluru haagalla, illiya janare bereyawara bhashe kalitaare! →
+                            but bengaluru is not like that. the people here themselves learn the other person’s language!</p>
+                        <p>M: i know right! that's why it's so hard to learn kannada here…</p>
+                        <p>H: adh nangu gothappa → i too know that well yaar</p>
+                        <p>aadru manasidre maarga → still, where there's a will there's a way</p>
+                        <p>and ninage manasside and naanay maarga! → and you have the will and i am the way!</p>
+                        <p>M: hahaha! i hope the marga will be smooth...</p>
+                        <p>H: yochane maaDbeda kaNayya! → don’t worry, yaar!</p>
+                        <p>sugamawaag iratthe → it'll be nice and pleasant</p>
+                        <p>moor-naalk thingaLalli ninage channagi kannada barohaag maaDtini! →</p>
+                        <p>i will make it so that you know good kannada in about three-to-four months!</p>
+
+
+
+
+                    </div>
+                    <!--Third Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(3)">
+
+                        <h2>Run in with the auto-wallahs</h2><hr>
+
+                        <p>ellorigu namaskaara. munna mattu honnana naDuve mattinondu maatukathe →</p>
+                        <p>yet another dialogue/conversation between munna and honna.</p>
+                        <hr><br>
+
+                        <p>M: hello! so what're we going to learn today?</p>
+                        <p>H: neené heLappa, ning yén beku adhé kaliyóNa → you tell me man, we'll learn whatever you want.</p>
+                        <p>M: well...i'd like to talk to an auto driver in kannada...ask him if he’ll come somewhere</p>
+                        <p>H: oh ho, howdhaa? yellige? → oh ho, is that so? where?</p>
+                        <p>M: anywhere --how about majestic? how do i ask an auto driver if he’ll come to majestic?</p>
+                        <p>H: hmmm, sari noDoNa → all right, let’s see…modalu awara hatraa hógi eethara hayLbahudu → to begin with, you can go up to him and say this</p>
+                        <p>H: namskaara aNNa, majestic-ge barthiraa? → namaskaar bhaiyya, will you (respectful) come to majestic?</p>
+                        <p>M: okay...and then?</p>
+                        <p>H: adhu ninagay biTTiddu → that’s up to you</p>
+                        <p>yen hayLbeku awarigé → what would you like to say to him (respect)?</p>
+                        <p>M: what if he says 150 or 200 rupees? how do i ask him to put on the meter?</p>
+                        <p>H: haha! oLLe prashne → good question!</p>
+                        <p>neen eethara hayLbahudu → you can say this…</p>
+                        <p>“illa swaami, meter haak banni. békandhre meter mayl hat rupaay koDtini →</p>
+                        <p>no sir, put on the meter and come. if you wish, i’ll give you 10 rupees above the meter’s fare</p>
+                        <p>M: and if he refuses?</p>
+                        <p>H: haag maaDidre, neenu “parwaagilla swami, inyaaro kivigé hoova haaki (iDi)…” hayLi hogthaa irbodhu →
+                            if he does that, you can say “no problem mister, find somebody else to fool…” and be on your way!</p>
+                        <p>M: hahaha! okay...and what if he accepts and i’m in a hurry and want him to go quickly but also carefully?</p>
+                        <p>H: eethara hayLbahudu → you can say this...</p>
+                        <p>“swami, aadashTu bayg hogi. solpa urgent kelsa iday. but jopaanawag hógi...” →
+                            “sir, go as quickly as possible. i have some urgent work. but go carefully too please…”</p>
+                        <p>M: nice!</p>
+                        <p>H: alwaa? kashTa anthaa unsuttha? → isn’t it? do you think this is hard?</p>
+                        <p>M: no, not at all! i’m enjoying it!</p>
+                        <p>H: bhaysh, maaraaya! haagay munduwarili → excellent, dude! i hope it continues that way!</p>
+
+
+                    </div>
+                    <!--Fourth Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(4)">
+
+                        <h2>Are you thou?</h2><hr><br>
+                        <p>M: yenappa honna, neevu channaagiddeeraa?</p>
+                        <p>H: haha! nice munna! bayg-bayg kalitidyaa → you’re learning fast-fast</p>
+                        <p>aadhru “channaagidiraa” anthaa hayLbekaagilla → but there’s no need for you to say “channaagidiraa”</p>
+                        <p>M: why? doesn’t it mean -- “are you doing well?” you only taught me that!</p>
+                        <p>H: illa, illa, neen hayLid tappalla → no, no, what you said isn’t wrong</p>
+                        <p>aadru nan jothe bahuvacana baLsbekaagilla → but you don’t need to use the bahuvacana with me</p>
+                        <p>sumnay “channaagidya” hayLidray saaku → it’s enough if you say “neenu channaagidya”</p>
+                        <p>M: i see. this is a big problem with our indian languages...learning the regular and respectful form of the same word!</p>
+                        <p>H: khandithaa → definitely!</p>
+                        <p>haagay, adara bagay maataaDoNa iwattu → in fact, let’s talk about that today…</p>
+                        <p>M: yes, let’s!</p>
+                        <p>H: modalu idan kaliyoNa → let’s first learn this:</p>
+                        <p>neenu andhray thum/thou → neenu means tum/thou (regular)</p>
+                        <p>neewu andhray aap/you → neewu means aap or you (respectful)</p>
+                        <p>so neewu hegidiraa andhray how are you (respectful)?</p>
+                        <p>and neenu hegidiyaa andhray how are you (regular)?</p>
+                        <p>M: so -- is there some sort of pattern to what is respectful and what isn’t?
+                            like channaagidira and channaagidiya? haygidiraa and haygidiyaa? i sense something but i can’t put my finger on it…</p>
+                        <p>H: hahaha! sareeg hayLidyaa kaNó → hahaha! you’ve got it right man…
+                            idiraa sayrisidhray adhu bahuvacana aagatthay → if you add idiraa you get the bahuvacana</p>
+                        <p>haagay, idiyaa sayrisdhray ekavacana aagatthay → likewise, if you add idiyaa you get the ekavacana...</p>
+                        <p>M: but these are for questions right...how do i say do this in a respectful?</p>
+                        <p>H: ah, adikkay beray riti → ah, that is done differently…</p>
+                        <p>for example, maaDi andhray kijiye mattu maaDu means karo
+                            athawaa banni andhray aayiye mattu baa andhray aao</p>
+                        <p>aadhru eethara biDsi-biDsi kaliyódhu ashTu upayuktawalla → but learning it like this (separately) is not that useful…</p>
+                        <p>kayLi maataaDi kaliyódé laysu → it’s best to learn it by listening to it and speaking it...</p>
+                        <p>M: no doubt, no doubt, that’s what i’m going to try doing. thought i wish there was some way to create an artificial kannada-only environment...i’m sure i’d learn it quite quickly!</p>
+                        <p>H: naan nambtini appa nin maatannu → i can believe that, yaar!</p>
+                        <p>ninna waygawaadha kalikay adakk oLLe saakshi → your quick learning is proof of that!</p>
+
+                    </div>
+                    <!--Fifth Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(5)">
+
+                        <h2>Friend Talks</h2><hr><br>
+                        <p>H: yenappa munna, channaagidyaa? → what man, munna, are you fine?</p>
+                        <p>M: howdhu, channaagidini. neewu? sorry, neenu? → yes, i’m fine. aap? sorry, tum?</p>
+                        <p>H: haha! naanuu channagidini. matthay yén samaachaara nindu?</p>
+                        <p>M: well...naanu samaachaara -- tcch, i don’t know what to say man! i know you asked me what the news is but i don’t know how to answer!</p>
+                        <p>H: yén hayLbék neenu? → what is it you want to say?</p>
+                        <p>M: i want to say that i recently moved into a new pg.</p>
+                        <p>H: oh! nice! adannu heeg hayLbahudu → here’s how you can say that</p>
+                        <p>eechaygé naanu hosa pg-gé shift aadhay</p>
+                        <p>M: so eechaygé means new?</p>
+                        <p>H: illa -- eechaygé andhray recently -- hosa andhray new</p>
+                        <p>M: i see...matthay, neewu samaachaara yénu?</p>
+                        <p>H: nimma samaachaara anthaa hayLbayku -- neewu andhray aap -- nimma andhray aapkaa</p>
+                        <p>hyégo, yénu wishesha ilvo hayLakke → anyway, there’s nothing special to tell</p>
+                        <p>yaynidhru, ee naDway kelsaa solpa jaasti aagidhay → if anything, work has become a little hectic these days</p>
+                        <p>M: ayyo! how come?</p>
+                        <p>H: nanna manager bahaLa shistin mansha → my manager’s a very disciplined man</p>
+                        <p>so naawuu aa tharaha irbekanthaa ankoLtaaray → so he expects us too to be like that!</p>
+                        <p>adh yayn unTrogaa naa namgu barakke? → what, is it some sort of communicable disease that we too can get?</p>
+                        <p>M: hahaha! sakkath hot, maga!</p>
+                        <p>H: aa radio mirchi sahawaasa biTTu nanidhaa kali, ashtay saaku →
+                            forget about that radio mirchi and all that and simply learn from me, that’s enough!</p>
+                        <p>M: khanDithaa!
+
+                    </div>
+                    <!--Sixth Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(6)">
+
+                        <h2>Do Eat Do</h2><hr><br>
+                        <p>These two audios should help with some basics. Make sure to practice them after you hear.</p>
+
+                    </div>
+                    <!--Seventh Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(7)">
+
+                        <h2>From understanding to speaking</h2><hr><br>
+                        <p>M: honna, today i’m going to try to speak in kannada only!</p>
+                        <p>H: super, haagay maaDu → super, do that</p>
+                        <p>M: let me try to translate what i just said…”nannu ee dina only kannada maathaaDini” -- how’s that?</p>
+                        <p>H: bhaysh kaNayya! woLLe prayatnaa! → good job, dude! good try!</p>
+                        <p>M: okay -- but was it correct?</p>
+                        <p>H: hecchukammi → almost</p>
+                        <p>sarigay hayLodhu heegay → here’s the correct way to say it</p>
+                        <p>“naanu (not nannu) iwattu (but ee dina is also fine) bari (that is, only) kannada maathaaDthini (not maathaaDini)</p>
+                        <p>but ee saNNa puTTa tappu maaDidhray yén thondhray illa → but it’s no problem if you make these minor mistakes</p>
+                        <p>kaliyodaadaruu haagay → after all, that’s the only way to learn</p>
+                        <p>M: howdhu? thanks! naanu tumbhaa khushi.</p>
+                        <p>H: good try matthay! but that should have been “howdha: -- “howdha?” means “oh, is that so?” while “howdhu” means “yes”</p>
+                        <p>haagay, nanagay tumbhaa khushi is more correct than naanu thumbaa khushi…</p>
+                        <p>M: oh! howdha? (is that so) yékay? (why?) naanu matte nanagay -- what is the...difference? damn! i’ve forgotten the word for difference! i remember you used it a few days ago</p>
+                        <p>H: nice! here’s the difference --naanu andhray I/mein
+                            nanagay (usually pronounced nangay) means mujhay or mujhko (something like “for me”)</p>
+                        <p>M: i see...so naanu munna is correct but nanagay hunger feeling is what i should say?</p>
+                        <p>H: well yeah...if you don’t know how to say “hunger feeling” in kannada…</p>
+                        <p>M: tell me then!</p>
+                        <p>H: hasivu aagthidhay (usually pronounced hasu aagthidhay) means “am feeling hungry”</p>
+                        <p>M:  sari, now just listen to me! naanu munna, nanagay hasivu aagthidhay. baa ooTa maaDu!</p>
+                        <p>H: almost there -- it should be ooTaa maaDoNa -- come let us eat</p>
+                        <p>M: sari kaNayya, bayg baa eega, hasivu aagthidhay! (alright man, come quickly now, i’m feeling hungry) ooTa maaDoNa!</p>
+
+                    </div>
+                    <!--Eighth Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(8)">
+
+                        <h2>The story from the start</h2><hr><br>
+                        <p>M: ay munna, iwattu tell me something about Bangalore or Karnataka, man, some interesting story or something</p>
+                        <p>H: howdha? sari...aadhru kannadalli hayLalaa English nalli hayLalaa? → oh, really? but shall i tell it in Kannada or in English</p>
+                        <p>M: use both languages! the way i sometimes use hinglish -- actually is there a kannada equivalent for hinglish?</p>
+                        <p>H: howdhu, idhay! kanglish anthaa karitaaray! → yeah, there is! they call it kanglish!</p>
+                        <p>M: hahahaha! anyway, why don’t you start…</p>
+                        <p>H: hmmm, sari...but hyég shuru maaDodu? (how to start?)...
+                            ah! sari, bengaLuru hesarina itihaasa hayLtini ningay -- i’ll tell you the history of bengaluru’s name</p>
+                        <p>Though adhu danta kathay naa nijaa naa patthay maaDodu kashTa --though it’s hard to determine if it’s a true story or simply a legend --</p>
+                        <p>M: sounds exciting, honna!</p>
+                        <p>H: yénandhray, baaLaa hindhay -- a long time ago -- obba raaja iddaa anthay -- there was a king it seems</p>
+                        <p>M: there’s always a king…</p>
+                        <p>H: solpa summan koothkonD keLthyaa ilwaa? → will you sit quiet and listen or not?</p>
+                        <p>M: (:p)</p>
+                        <p>H: hmph! hyégo, ee raja ondh dinaa bétay aaDakke hógtaane → anyway, one day this king goes hunting</p>
+                        <p>maamuli kathay hangay -- like in a regular story -- jinkay kaaNsatte -- he sees a deer -- utsaahadinda adannu hiDiyakke kudure-na jóraag óDsthaanay -- enthusiastically, he rides his horse swiftly in order to catch it</p>
+                        <p>aadhru marichi taraha adhu hyégo maayawaagatthay → but like marichi (in the ramayana, remember), it somehow vanishes</p>
+                        <p>eeg yén maaDodu? → what to do now? -- raajangay sustu -- the raja is tired -- adramelay, baayaarike aagtidhay -- on top of that, he is feeling thirsty -- hógtaa hógtaa ondh puT guDisalu sigatthay -- as he goes on and on, he comes across a small hut…</p>
+                        <p>M: another regular part of (most stories)…</p>
+                        <p>H: howdhu. hyégo, alli obbaLu haNNagiro mudhuki kaaNstaaLe → anyway, he sees an old, wizened woman there</p>
+                        <p>so...karitaanay → he calls out</p>
+                        <p>avva, tumbaa baayrikay awwa, neer koDtyaa → avva, very thirsty avva, will you give me water?</p>
+                        …
+                        <p>M: and then?</p>
+                        <p>H: iwattig ashTay kaNo, recording aaglay moor nimshakkinta jaasthi aaythu → that’s all for today, man, the recording’s already gone over 3 minutes</p>
+                        <p>M: but what about the rest of the story!</p>
+                        <p>H: aaraamwaagirappa → take it easy, dude</p>
+                        <p>adhu mundina kanthalli hayLtini → i’ll tell that in the next installment</p>
+
+                    </div>
+                    <!--Ninth Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(9)">
+
+                        <h2>Solpa Neer Kudi</h2><hr><br>
+                        <p>M: man, honna, you should have finished the story that day itself man! i’ve almost forgotten it now…</p>
+                        <p>H: haha! parvaagilwo -- no problem -- eeg continue maaDthini -- i’ll continue it now</p>
+                        <p>H: so, nenapidyaa? -- so, do you remember? -- raajaa ajji-ge neer bayku
+                            anthaa hayLidhanay -- the raajaa has told the ajji that he wants some water</p>
+                        <p>M: howdhu…</p>
+                        <p>H: sari, so -- aa tharaa kayLid maylay aa ajja oLag hóg neer tartaaLe --
+                            anyway, after he’s asked her like that, the old lady goes inside her small house and brings some water</p>
+                        <p>raajaa channaag kuDithaanay -- the raajaa drinks nicely -- matthay solpa geluv
+                            baratthay awanigay -- and he perks up a little</p>
+                        <p>awan hayLtaanay -- he says -- naa abhaari ajji, eeg barthin naanu, namskaara -- i’m
+                            indebted, ajji, i’ll be going now, namaskaar</p>
+                        <p>aadhru ajji hayLtaaLay -- but the ajji says -- illa maga, solpaadhru thindh hógbayku --
+                            you have to at least eat a little before you go -- haagay hógbiTray? yénadhu? -- if you just go off? what is that?</p>
+                        <p>raajaa bayDa anthaanay aadhru ajji vottaaya maaDtaaLay -- the raajaa says no but the ajji insists</p>
+                        <p>so sari anthaa kudhrayinda iLdhu, allay kai kaal toLkoNDu ooTak koothkoLthaanay  --
+                            so he says okay, gets off his horse, washes his hands and feet and sits down to eat</p>
+                        <p>ashTaralli, aa ajji awanigay thandhidh ooTa anthu ruchiyo ruchi! -- meanwhile, the food
+                            that the ajji gets for him is mouth-wateringly delicious!</p>
+                        <p>M: naiiiice! and then? go on, honna!</p>
+                        <p>H: so, hyégo, adannu raajaa tumbaa ishTa paDtaanay -- anyway, the raajaa loves it</p>
+                        <p>thindhu matthay solpa neer kuDdu yeddhu horaDakke tayyaar aagthanay -- he eats it, drinks a
+                            little water and then gets up and gets ready to leave</p>
+                        <p>M: sorry for interrupting, but what did the raajaa eat?</p>
+                        <p>H: hahaha! that’s the million-dollar question, man! aadhru matthay hotth meeridhay -- but once
+                            again, time’s past -- khanDithaa naaLay hayLi mugstini -- i’ll definitely finish telling you the story tomorrow…</p>
+                        <p>M: mannnn, who are these people who can’t listen to audios longer than 3 minutes? tcch...</p>
+                        <p>H: (:D)</p>
+
+                    </div>
+                    <!--Tenth Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(10)">
+
+                        <h2>Vegetables and the Metropolis</h2><hr><br>
+                        <p>H: sari kaNo, munna iwattu khaNDithaa aa katheyan mugsthini → all right man, munna, today i’m definitely going to finish that story</p>
+                        <p>M: let’s see, let’s see...you know, i’m not convinced it actually has an end.</p>
+                        <p>H: sari, sari, sopla summan koothkonD kayLu -- all right, all right, just keep quiet and listen</p>
+                        <p>so hyégo aa raajaa horaDakkay siddha -- so anyway, that raajaa’s ready to leave</p>
+                        <p>aadhru adhik munchay aa ajjayan kayLtaanay -- but before that, he asks that ajji</p>
+                        <p>yén ajji, yén idhu neev koTTiddu -- what was this you gave -- devalókadh ooTa tharaah ittu -- it was like heaven’s food</p>
+                        <p>awaagaa ajji hayLtaaLay -- then the ajji says -- idhu bendha kaaLu maganay, adhikkay solpa uppu-kaaraa haaki koTTay -- those were just boiled/baked beans, son, i just added a little bit of salt-and-spice and gave them to you</p>
+                        <p>M: whoa!</p>
+                        <p>H: alwaa? hyégo, raajaa adannu kayLi thumbaa khushiyaagi hayLtaanay -- anyway, the raajaa hears that and is overjoyed and he says</p>
+                        <p>ajji, ee ninna upakaarakké naanu yéno ondh koDbeku -- ajjia, for your hospitality and help, i have to give you something</p>
+                        <p>aamayl hayLtaanay … illinda hiDidu suttu-muttulu iro 200 ekray bhoomi ningay koDthidhini -- and then he says … i’m giving you 200 acres of the surrounding land</p>
+                        <p>ninna kulaa beLili, nimma makLu, mommakLu, marimakLannu channaag irli -- let your kula grow; and let your children, grandchildren, great-grandchildren be comfortable</p>
+                        <p>and ee ninna bendha kaaLina nenapigay ee oorina hesaru bendhakaaLooru anthaa aagali -- and in memory of this bendha kaaLu of yours let the name of this town be bendakaaLooru</p>
+                        <p>M: whoa! but wait, wait ... now let me try to piece this together -- bendakaaLooru -- bendaLuru -- bengaLuru ... is that how bangalore got its name?</p>
+                        <p>H: exactly! sareeg heLidya! -- you’ve got it right!</p>
+                        <p>ee kathay nijavo suLLo yaargu sareeg gotthilaa -- nobody really knows if this story is true or not</p>
+                        <p>aadhru popular imagination nalli anthu ee kathay bayrooridhay -- but in the popular imagination at least this story has imprinted itself</p>
+                        <p>M: (whistle) that was interesting, honna! nangay ishTa aaythu! (i liked it) nangay one more story beku now. hayLtiyaa? (will you tell one)</p>
+                        <p>H: noDoNa appa, ning ishTaa idhray nanig yén aDDi illa -- let’s see, da, if you’d like it, i have no objection.</p>
+
+                    </div>
+                    <!--Eleventh Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(11)">
+
+                        <h2>A Recap of the verbs</h2><hr><br>
+                        <p>See if you can understand all the tenses of the verbs. Listen to these atleast twice and practice.</p>
+
+                    </div>
+                    <!--Twelfth Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(12)">
+
+                        <h2>A deeper dive</h2>
+                        <hr><br>
+                        <p>namskaara,verbs kurtu paaTha mundhwaristhini → i will continue the lessons on verbs</p>
+
+                        <hr><br>
+                        <h4>iwattina modalanay verb bandhu hayLu → today’s first verb is hayLu</h4>
+                        <ul>
+                            <li>hayLu andhray say/tell</li>
+                            <li>hayLbeku andhray "you must tell me" or "bolnaa hain</li>
+                            <li>hayLtaidyaa andhray "are saying" or "tum bol rahay hó"</li>
+                            <li>hayLtaiddeera andhray "are saying" or "aap bol rahay hó"</li>
+                            <li>hayLtidini andhray "am saying" or "bol rahaa hoon"</li>
+                            <li>hayLbaardu andhray "mustn't say/tell" or "muth bolnaa"</li>
+                            <li>hayLaaythu andhray “have finished saying” or “bol chukaa hoon”</li>
+                            <li>hayLalla andhray "i won't tell" or "nahi boloonga"</li>
+                            <li>haYLlla andhray “shall i say/tell” or “boloon”</li>
+                        </ul>
+                        <hr><br>
+                        <h4>eega kelavu sentences:</h4>
+                        <ul>
+                            <li>nidhaanawaagi hayLappa. yénu awasaraa illa → say it slowly, man. there's no hurry.</li>
+                            <li>neew hayLbék swaami. neewé yella kaDay wóDaaDthirtheera → you must tell me, sir. you're the one who’s always running around. (aap bolnaa hain, ji. aap hi har jagah ghoomthay rahtay ho.)</li>
+                            <li>yén hayLtidyaa? joraag maathaDu. sareeg kayLstilla → what are you saying? talk loudly. i can't hear you properly. (kyaa bol rahay ho? zór say baat karo. sahi say sun nahi rahaa hain.)</li>
+                            <li>aa tharaha yella hayLbaardu, kaNo. awar yén thapp maaDidaaray? → you mustn't say things like that, yaar. what fault is it of theirs? (aisay bolna muth, yaar. kyaa galti kiyaa hain wo log?)</li>
+                            <li>naan awarige hayLbaykadaddu hayLaaythu. mikkidh awarig biTTiddhu. → i’ve told them whatever needed to be told. the rest is up to them. (joh bolnaa thaa mainay bolaa hoon. baaki uskaa marzi hain.)</li>
+                            <li>ninagay ondh maath hayLlaa? neenu thumbaa chendaa kaaNtidyaa. → shall i tell you something? you're looking very nice. (main ek baat boloon? thum bahut accha dikh rahay ho.)</li>
+                            <li>hogolay, naan ning hayLalla. sum-sumnay kaaTaa koDbeDaa → go away man, i won't tell you. don't simply trouble me. (haT yaar, main tujhay nahi boloonga. simp-simply trouble mat karo.)</li>
+                        </ul>
+
+                        <hr><br>
+
+                        <h4>iwatthina eraDanay verb bandhu kayLu</h4>
+                        <ul>
+                            <li>kayLu andhray both ask and listen</li>
+                            <li>kayLaadmaylay andhray "after having listened to" or "sunanay kay baadh"</li>
+                            <li>kayLbiDu andhray "ask off" or "pooch lo"</li>
+                            <li>kayLisu andhray "get (someone) to listen to" or "sunaao"</li>
+                            <li>kayLthaa andhray "while listening" or "sunkay"</li>
+                        </ul>
+                        <hr><br>
+
+                        <h4>eega kalavu sentences-gaLu:</h4>
+                        <ul>
+                            <li>neenay kayLu. ninna yén tinbiDalla owru → you only ask. they won't eat you off. (tum hi pooch. woh tumko kayayngay muth.)</li>
+                            <li>ayyo maaraaya, raamayaNa kayLaadmaylay sita yaarantha kayLdangay aaythalwaa? → man, raamayaN sunanay kay baadh sita kaun poochnay ki jaisay ho gayaa naa?</li>
+                            <li>sumnay bhanD dhairyaa maaDkonDu kayLbiTTay → i simply put on a mask of bravado and asked off.</li>
+                            <li>baaro illi, ondh sakkath haaDan kayLstini ningay → come here man, ek super song sunaaoongaa.</li>
+                            <li>oun maatu kayLthaa kayLthaa nidday-ne maaDbiTTay → sunkay sunkay to him speaking, main so hee gayaa.</li>
+                        </ul>
+
+                    </div>
+                    <!--Thirteenth Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(13)">
+
+                        <h2>A Childhood Tale</h2><hr><br>
+                        <p>
+                            namskaara, iwatthu naanu sumnay ondhisthTu maataaDtini. nim kelsaa bandhu aalisodu maathraa → today i will simply say (speak) a little bit. your only job is to listen
+                        </p>
+
+                        <p>naanu bengaLurinawanu anthaa hayLbodhu → you could say i am a bangalorean.</p>
+                        <p>aadhru adhu sumnay hesarigay → but that’s just sort of a naam-kay-wasthaay thing.</p>
+                        <p>nijaa hayLbayk andhray naanu beLdiddhu yella tata instute nalli → to tell the truth, i grew up in the tata institute (that is, the indian institute of science or the IISc).</p>
+                        <p>adhu bengaLuru anthaa hayLodh kashTaa → it’s hard to call that bangalore.</p>
+                        <p>alliya hawaa, alliya wathaawaraNa, alliya jana yella beray jaatiyaddhu → the climate there, the environment, the people -- they’re all a different sort (from regular bangalore).</p>
+                        <p>idh utpraykshay alla, alliya hawaa nijaawaaglu horgaDay kinthaa eraDo moorO degrees kammi → this is not an exaggeration. the weather there -- the temperature there -- really is 2 or 3 degrees cooler than the outside (rest of bangalore).</p>
+                        <p>iwatthigu kooDa → even to this day.</p>
+                        <p>nanigay channaag gnyaapkaa idhay → i remember very vividly;</p>
+                        <p>naan chikkavan iddaaga, yello horgaDay hogi waapas manay-ge barthirbayku andhray naanu nanna thandhay athwaa thayiya thoDay maylO hegal maylO haayaagi malgirthiddhay → when i was quite a little fellow and we were coming back home from somewhere outside, i’d be happily asleep on my mother’s or father’s shoulder or lap;</p>
+                        <p>aadhru institute woLagaDay bandh kooDlay nangay echraa aagbiDtitthu! → but no sooner did we enter the institute than i’d wake up!</p>
+                        <p>aa thangaaLi yenthado ondh maayay maaDi nannan ebstitthittho yayno → perhaps that cool breeze (zephyr) worked some magic and woke me up or something...</p>
+                        <p>eega naanu institute quarters nalli waasaa maaDthilla → now i no longer live in the institute’s quarters;</p>
+                        <p>aadhru aa savinenapugaLu nan jothaynay uLiyatthay anthaa ankonDidini → but i should think those fond memories will remain with me</p>
+
+                    </div>
+                    <!--Fourteenth Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(14)">
+
+                        <h2>Common Roots</h2><hr><br>
+                        <p>namskaara, iwatthu kooDa naanu sumnay maathaaDthini. nimagay bayjaar aagolla anthaa nambidini → today too i will simply speak (talk). i trust you will not be bored.</p>
+                        <p>hódh sarthi naanu tata institute baggay maathaaDidhay. ee sarthi naanu kannada bhaashay baggay ondh-eraD maath aaDtini → last time i talked about the tata institute. this time i will say a couple of words about the kannada language.</p>
+                        <p>itihaasatagnyaru hayLodhu yayandhray, sahityada drishTiyinda nODidaaga samskrita matthu tamizha nantara kannada bhaashéya paramparay nay ati-haLéyaddu → according to historians, when looked at from a literary perspective, after sanskrit and tamizh, kannada’s tradition is the oldest.</p>
+                        <p>aadhru maathina drishTiyindaa noDidaray, kannada matthu tamizh onday mooladinda huTTida bhaashaygaLu; woTTigay beLdu aamaylay bérbéray aagiddhu → but as far as the spoken aspect is concerned, kannada and tamizh are languages born from the same root; that grew together and later separated</p>
+                        <p>ee ondhu haLay moolada bhaashay-ge historians iTTiruva hesaru proto-dravidian anthaa. idhu proto-indo-european bhaashaygaL kinthaa bhinnavaddhu → the name historians have given this old root-language is proto-dravidian. it is different from the proto-indo-european root-language</p>
+                        <p>andhray samskrita, hindi, punjabi, marathu ithyaadi bandhu kannada, tamilm malayalam ithyaadi bhaashaygaL kintha bayray species → which means that sanskrit, hindi, punjabi, marathi etc. are a different species (altogether) from the kannada, tamil, malayalam etc. languages;</p>
+                        <p>ondhay marada bayray bayray kombaygaLalla → they are not different branches of the same tree;
+                        <p>adh biTTu, bayray bayray marada bayray bayray kombegaLu! → they are different branches of different trees!</p>
+                        <p>idhu nijawaagalu kautukada maatu → this is a very piquant matter;</p>
+                        <p>haygay ondhay bhoo-khanDadalli eraDu bayray bayray reetiya bhaashay beretu beLedu habbidevu anthaa → how in the same part of the world, two different types of languages mixed and grew and spread</p>
+                        <p>haagay, inondhu kutoohalada maatandhray, pratiyondhu dravida bhaashayuu samskritadinda padagaLannu eravalaagi togonDidhay → another curious matter is, every dravidian language has borrowed words from sanskrit;</p>
+                        <p>haag nóDidhray, ee prakriyéyalli keloh sarthi ee bhashaygaLa itihaasaway aDagiratthay → in this process, sometimes, the history of these languages itself is hidden</p>
+                        <p>udhaaharaNay-ge (for example), kannadadalli “sun”-ge soorya anthivi → we say soorya for sun in kannada. idhu shuddha samskrita pada → this is a pure sanskrit word (and a direct borrowing)</p>
+                        <p>aadharu naawu kannadadalli month-ge “thingaLu” anthaa hayLthivi → but we say “thingaLu” for month in kannada; idhu shuddha dravida pada → this is a pure dravidian word.</p>
+                        <p>adh biTTray, thingaLu padada innodhu arthaa bandhu moon/chandra → and besides that, another meaning of thingaLu is moon; and</p>
+                        <p>namigay gottiruwa haagay, haLay kaaladalli manushya kula chandrawannay pramaaNawaag iTkonDidhru nikaTawaadh sambhandha → and as we know, in the olden days, human beings used the moon as their (main) measure;</p>
+                        <p>ee reetiyalli huDukidaray yényéno siggathay! → if we look (search) in this way, we’re likely to find all sorts of things!</p>
+
+
+                    </div>
+                    <!--Fifteenth Lesson-->
+                    <div class="col-md-6 lesson-body" ng-show="isSet(15)">
+
+                        <h2>Cuemath</h2><hr><br>
+                        <p>namskaara, iwatth naanu cuemath baggay kannadadalli hayLokkay noDtini → today, i will look to talk about cuemath in kannada.</p>
+                        <p>cuemath andharay yenthaa company? yayn maaDatthay? anthaa yaaradaru kayLidaray yayn anthaa hayLbodhu? → if somebody asks -- what sort of company is cuemath? what does it do? -- what is it we can say (in reply)?</p>
+                        <p>yayn hayLbodhu andhray → what we can say is:</p>
+                        <p>cuemath-ina uddesha yenandhray prati obba magu mathematics-annu ishTaapaDokkay shuru maaDbayku → cuemath’s objective is to get every child to begin to (really) like mathematics</p>
+                        <p>ee namma kelasakkay moola prayrNe yayandhray namma schoolgaLalli makLigay maths-annu sariyaag hayLkoDay iruvudu → the inspiration behind this attempt of ours is the fact that our schools do not teach children maths correctly</p>
+                        <p>adhara swaarasya, adhara beDagannu tóriso badlu makLigay sappayaagi, neerasawaagi hayLkoTTthaaray → instead of showing how interesting it can be, how fascinating it can be, they teach in extremely dry fashion</p>
+                        <p>makLigay uru hoDastaaray → they get children to mug things up;</p>
+                        <p>matthay magu channag maaDilla andhray adhikkay shikshay koDtaaray; ninagay maths barolla anthaa hayLthaaray → and if the child doesn’t do well, they punish it, they say “you don’t know maths”</p>
+                        <p>matthu idara pariNama yayandhray magu-gay maths baggay besara huTTodhu, maths baggay asaDDay huTTodu maths andhray nangbaralla anthaa ansódhu → and the result (of these things) is that child begins to feel bored with maths, feel an antipathy for maths, comes to believe that he or she is not capable of doing maths</p>
+                        <p>mattu idhay bhaavanay vayass aadmaylu makLannu biDalla, haagay awaru adannu baluvaLiyaagi mundhina peeLigay-ge koDthaaray → and this feeling does not leave the child even after it grows up, and consequently it bequeaths this (feeling) to the next generation</p>
+                        <p>ee ondh suLiyannu muriyaday cuemath-ina ghanawaadha uddeshya → to break this vicious cycle is cuemath’s grand intention;</p>
+                        <p>maths-u ondhu bhaashay-ne, ondhu cheluvaad bhaashay ondhu sogasaadh bhaashay anthaa torisalu kelsaa maaDthidhay → it is working to show that maths too is (a kind of) language, a beautiful and attractive language</p>
+                        <p>matthu makLu maths-annu khushiyinda, aasakthiyinda, kuthoohaladinda kaliyo haagay maaDak prayatna paDtidhay → and it is trying to make it so that children (this language) maths with joy, with interest, with curiosity</p>
+
+                    </div>
+                <!--End of the lesson transcripts-->
+
+                <!-- Here come the Audio Files-->
+                <div class="col-md-3"   ng-show="isSet(1)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <!-- isSet sets the link to the button thats pressed-->
+                <div class="col-md-3"   ng-show="isSet(2)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL2.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(3)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL3.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(4)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL4.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(5)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL5.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(6)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL6a.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL6b.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                </div>
+                <div class="col-md-3"   ng-show="isSet(7)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL7.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(8)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL8.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(9)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL9.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(10)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL10.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(11)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL11a.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL11b.mp3" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(12)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL12a.mp3" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL12b.mp3" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(13)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL13.mp3" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(14)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL14.mp3" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-3"   ng-show="isSet(15)">
+                    <h2>Lesson Audio</h2>
+                    <audio controls="controls" loop preload="none">
+                        <source src="audio/KL15.mp3" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <!-- End of Audio Files-->
+
+            </div>
+            <hr>
+
+            <div class ="footer-separator"></div>
+            <footer>
+                <div class ="footer-copys">
+                    <p>&copy; Madhav Ajjampur 2017. Rights Reserved </p>
+                </div>
+                <div class="footer-social-icons">
+                    <a href="https://www.facebook.com/madhav.ajjampur" target="_blank"><img src="images/fb.png" height="35" width="35"></a></img>
+                    <a href="https://darabendreinenglish.wordpress.com/" target="_blank"><img src="images/wordpress.png" height="30" width="30"></a></img>
+                    <a href="https://www.linkedin.com/in/madhav-ajjampur-b50a00116" target="_blank"><img src="images/linkedin.png" height="30" width="30"></a></img>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</div> <!-- /container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: This needs to be added to the bottom of every page on the site. -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-90164010-1', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
+

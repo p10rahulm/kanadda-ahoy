@@ -8,23 +8,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Lets create a title-->
         <title>Kannadifying Non-Kannadigas</title>
+        <!-- Some SEO-->
+        <meta name="keyword" content="Kannada, Kanadda, Kanada, Kannada Learning, Kanadda learning, Kanada Learning, Learn Kannada in 60 days, learn kannada quickly, speaking kannada,Talk Kannada, Talk Kannada Fast, Kannada in 30 days, language Kannada, Quick Kannada Learning, Bangalore Kannada Learn, Teach me Kannada, Kannada is difficult,Talk in Bengaluru, learn Kannada Language, Kannada Language, Madhav Ajjampur, Madhav, Cuemath, Pickup Kannada, Kannadify, Understand Kannada, Translate Kannada,Kannada is Difficult, How to speak Kannada,speaking Kannada, speak to auto in kannada, kannada audio learning, kannada through audio, hearing kannada to learn" >
+        <meta name="description" content="Kannadify teaches kannada in the most immersive learning manner possible to enable learners to pick up Kannada language quickly. It's a method called learning through doing. Not only will they understand within less time, but be able to start speaking as well. Best of luck in your kannada journey!">
+
 
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Lets load the base CSS (The styling of the website) needed for creating a webpage-->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
         <!-- Lets load our custom CSS file that will be used for the webpage-->
         <link rel="stylesheet" href="css/main.css">
         <!--Loading the theme style sheet -->
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
-        <!--OK the modernizr JS -->
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
+
 
 <body>
 
@@ -50,15 +53,18 @@
                 <form class="navbar-form navbar-right" role="form"
                       action="https://formspree.io/rahul.maddy@gmail.com"
                       method="POST">
+                    <input type="email" placeholder="Email" class="form-control" name = "email">
+                    <!--
                     <div class="form-group">
                         <input type="text" placeholder="Email" class="form-control">
-                    </div>
+                    </div> -->
+
                     <!--Honeypot! If some scraper gets to this and fills anything here, it is ignored-->
                         <input type="text" name="_gotcha" style="display:none" />
                     <!--Here are the cc ids-->
                     <input type="hidden" name="_cc" value="rahul.madhavan@atidiv.com,psypriya.d@gmail.com" />
                     <input type="hidden" name="_subject" value="New submission on Kannadify!" />
-                    <button type="submit" class="btn btn-success">Sign up for newsletter</button>
+                    <button type="submit" class="btn btn-success" value="Send">Sign up for newsletter</button>
                 </form>
             </div><!--/.navbar-collapse -->
         </div>
@@ -72,7 +78,7 @@
             <p>Kannada is an easy language that can be learnt within two months of consistent effort in talking.
                 Just two sentences a day can make you fluent if not proficient in Kannada. </p><p></p>
             <p>Join us in the journey of learning Kannada</p>
-            <p><a class="btn btn-primary btn-lg" href="lesson1.html" role="button">Start Learning! &raquo;</a></p>
+            <p><a class="btn btn-primary btn-lg" href="lessons.html" role="button">Start Learning! &raquo;</a></p>
         </div>
 
     </div>
@@ -109,14 +115,21 @@
                 </p>
 
 
-                <p><a class="btn btn-default" href="lesson1.html" role="button">Lessson 1 &raquo;</a></p>
+                <p><a class="btn btn-default" href="lessons.html" role="button">Lessson 1 &raquo;</a></p>
             </div>
         </div>
 
         <hr>
 
         <footer>
-            <p>&copy; Madhav and Company 2017</p>
+            <div class ="footer-copys">
+                <p>&copy; Madhav Ajjampur 2017. Rights Reserved </p>
+            </div>
+            <div class="footer-social-icons">
+                <a href="https://www.facebook.com/madhav.ajjampur" target="_blank"><img src="images/fb.png" height="35" width="35"></a></img>
+                <a href="https://darabendreinenglish.wordpress.com/" target="_blank"><img src="images/wordpress.png" height="30" width="30"></a></img>
+                <a href="https://www.linkedin.com/in/madhav-ajjampur-b50a00116" target="_blank"><img src="images/linkedin.png" height="30" width="30"></a></img>
+            </div>
         </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

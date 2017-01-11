@@ -4,10 +4,30 @@
    Author's custom styles
    ========================================================================== */
 
+@font-face { font-family: "Bodoni MT"; src: url('fonts/BOD_R.ttf'); }
 
+body {
+    font-family: "Bodoni MT";
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 
+.lesson-header{
+    font-family: "Bodoni MT";
+}
+#lesson-header-container{
+    background-color: #cccccc;
+}
 
-
+.navbar-brand{
+    font-style: italic;
+    font-size: 30px;
+    color: #cccccc;
+}
+.main-page-body{
+    font-size: 1.1em;
+    line-height: 180%;
+}
 
 
 

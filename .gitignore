@@ -3,6 +3,8 @@
 
 
 doc/
+audio/
+
 
 .gradle
 *.sw?
